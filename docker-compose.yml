@@ -1,0 +1,7 @@
+version: '3.6'
+services:
+  qrcode:
+    image: qrcode
+    entrypoint:  ["python", "./decode.py"]
+    volumes:
+      - .:/code
